@@ -1,18 +1,22 @@
 package com.hexlet;
 
-import com.hexlet.common.Course;
-import com.hexlet.humans.Student;
-
 public class Main {
-    public static void main(String[] args) {
-        Student studentMax = new Student();
-        studentMax.course.name = "Java course";
-        studentMax.name = "Max";
 
-        studentMax.sayHello();
-
-        Student studentSlava = new Student();
-        studentSlava.sayHello();
+    public  static  void main(String[] atgs) {
+        Human human = new Human();
+        human.setName("Max");
+        System.out.println(human.getName());
+        human.setAge(22);
+        System.out.println(human.getAge());
+        human.setAge(199);
+        System.out.println(human.getAge());
+        human.setAge(-199);
+        System.out.println(human.getAge());
+        human.setName("Kolya");
+        System.out.println(human.getName());
+        human.setName(null);
+        System.out.println(human.getName());
+        human.setName("M");
+        System.out.println(human.getName());
     }
-
 }
